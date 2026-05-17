@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E Anusha Reddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>E Anusha Reddy</h1>
+    <p>Aspiring Software Tester</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internship</a>
+    <a href="#contact">Contact</a>
+    <a href="https://drive.google.com/file/d/1o0G6hDU68kYVy6DNHn6z-p2izXpoZCSn/view?usp=drive_link" target="_blank">view my resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Aspiring Software Testing Engineer with knowledge of SDLC, STLC, 
+        hands-on experience on Manual Testing and basic Selenium automation. 
+        Seeking an opportunity to apply testing skills to ensure software quality and contribute to delivering web applications.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <p><b>Programming Languages:</b>Java</p>
+      <p><b>Database:</b>MySQL</p>
+      <p><b>Web Technologies:</b> HTML, CSS,JS</p>
+      <p><b>Testing Skills:</b>Manual Testing,Test Case Writing, Bug Reporting, Selenium WebDriver(Basic)</p>
+      <p><b>Soft Skills:</b>Adaptability, Communication, Team Collaboration</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><b>BTech in AI & DS</b> - Mother Theresa Institute of Engineering and Technology, 2021-2025 - 78%</p>
+    </div>
+    <div class="card">
+      <p><b>Intermediate (MPC)</b> - Sri Vivekananda Junior College, 2019-2021 - 89%</p>
+    </div>
+    <div class="card">
+      <p><b>SSC</b> -Sri Vani Vidyalaya, 2018-2019 - 93%</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Face Recognition Attendance System</h3>
+      <p><b>Technologies:</b> Python, OpenCV, Raspberry Pi GPIO, RFID</p>
+      <p><b>Role:</b> Team Leader overseeing software-hardware integration</p>
+      <p><b>Achievements:</b> Delivered robust real-time attendance logging</p>
+    </div>
+    <div class="card">
+      <h3>Player Management System</h3>
+      <p><b>Backend:</b>Java Servlets, Hibernate (JPA)</p>
+      <p><b>Frontend:</b>JSP, HTML, CSS</p>
+      <p><b>Database:</b>MySQL</p>
+      <p><b>Role:</b>Implemented Hibernate ORM for database interactions in MySQL 
+        with entity classes and annotations and Performed Manual Testing on 
+        modules like player data entry, update and delete functionalities.</p>
+    </div>
+  </section>
+
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="card">
+      <p><b>Java Full Stack Intern</b> - Dhee Coding Lab.<p>This internship helped me to gain hands-on experience with Java full Stack development and gained hands-on experience with Manual Testing.</p></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>📧Email: <a href="mailto:">reddyeanusha@gmail.com</a></p>
+      <p>📞Phone: 6304009699</p>
+      <p>🔗<a href="https://www.linkedin.com/in/anushareddy07/" target="_blank">LinkedIn</a> | 
+         <a href="https://github.com/Anusha-Reddy2003" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 E Anusha Reddy | Portfolio</p>
+  </footer>
+
+  <script>
+    // Fade-in animation when sections come into view
+    const sections = document.querySelectorAll("section");
+    const options = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
